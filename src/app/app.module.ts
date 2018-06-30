@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CvMainComponent } from './cv-main/cv-main.component';
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './app.routes';
 
 
 
@@ -14,7 +16,8 @@ import { CvMainComponent } from './cv-main/cv-main.component';
     CvMainComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
