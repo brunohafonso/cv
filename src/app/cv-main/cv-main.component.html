@@ -1,0 +1,125 @@
+<!-- inicio pré home -->
+
+<header class="prehome" #prehome>
+
+  <!-- inicio itens animação -->
+
+  <div class="prehome__animation-item animation-item-1">
+      <i class="fa fa-space-shuttle"></i>
+  </div>
+  <div class="prehome__animation-item animation-item-2">
+      <i class="fa fa-space-shuttle"></i>
+  </div>
+  <div class="prehome__animation-item animation-item-3">
+      <i class="fa fa-space-shuttle"></i>
+  </div>
+  <div class="prehome__animation-item animation-item-4">
+      <i class="fa fa-space-shuttle"></i>
+  </div>
+  <div class="prehome__animation-item animation-item-5">
+      <i class="fa fa-space-shuttle"></i>
+  </div>
+  <div class="prehome__animation-item animation-item-6">
+      <i class="fa fa-space-shuttle"></i>
+  </div>
+
+  <!-- fim itens animação -->
+
+  <!-- inicio titulo pre home -->
+
+  <div class="header header--center header--white">
+      <h1 class="header__primary header__primary--large">BRUNO AFONSO</h1>
+      <div class="header__divisor header__divisor--white"></div>
+      <h2 class="header__secondary header__secondary--large">DESENVOLVEDOR WEB</h2>
+  </div>
+
+  <!-- fim titulo pre home -->
+
+</header>
+
+<!-- fim pre home -->
+
+<!-- inicio menu -->
+
+<nav class="barra-menu" #menu>
+  <div class="menu-container">
+      <div class="menu-container__logo">
+          <a class="menu-container__logo__link" (click)="smoothScroll($event)" href="#prehome"> 
+              <i class="fa fa-code"></i> 
+          </a>
+      </div>
+      <div class="menu-container__botao">
+          <i class="fa fa-align-right"></i>
+      </div>
+      <ul class="menu-container__menu">
+          <li class="menu-container__menu__item">
+              <a class="menu-container__menu__item__link" (click)="smoothScroll($event)" href="#sobre">Sobre</a>
+          </li>
+          <li class="menu-container__menu__item">
+              <a class="menu-container__menu__item__link" (click)="smoothScroll($event)" href="#skills">Skills</a>
+          </li>
+          <li class="menu-container__menu__item">
+              <a class="menu-container__menu__item__link" (click)="smoothScroll($event)" href="#portifolio">Portifólio</a>
+          </li>
+          <li class="menu-container__menu__item">
+              <a class="menu-container__menu__item__link" (click)="smoothScroll($event)" href="#contato">Contato</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<!-- fim menu -->
+
+<!-- inicio seção sobre -->
+
+<div #sobre class="sobre-container">
+  <div class="sobre-container__descricao-container">
+      <h2 class="header header__secondary--large header__secondary--grey sobre-container__descricao-container__title">
+          Sobre Mim
+      </h2>
+      <div class="header__divisor header__divisor--grey header__divisor--small sobre-container__descricao-container__divisor"></div>
+      <img class="sobre-container__descricao-container__avatar" alt="Avatar Astronaut" src="../../../assets/astronaut.png" />
+      <h2 class="header header__secondary--large sobre-container__descricao-container__saudacao">
+          Oi, eu sou goku!
+      </h2>
+      <p class="sobre-container__descricao-container__bio">
+          Brincadeira, meu nome é Bruno Afonso, tenho 23 anos e sou desenvolvedor web freelancer,
+          <strong>apaixonado por tecnologia e principalmente por desafios</strong>, você deve estar se perguntando, porque
+          um astronauta e não uma foto dele !? Justamente pelo fato de que pra um astronauta o
+          <strong>céu não é o limite</strong> e na área de programação eu acredito muito nisso, que não há nada que eu
+          não possa fazer, se insistir com muita vontade e persistência, pra isso costumo deixar algumas horas
+          de sono de lado em busca da
+          <strong>solução perfeita</strong>.
+      </p>
+  </div>
+  <div class="sobre-container__preferencias-container">
+      <div class="sobre-container__preferencias-container__bloco">
+          <img src="../../../assets/hobbies.png" alt="hobbies" class="sobre-container__preferencias-container__bloco__icon" />
+          <h2 class="header header__secondary--large sobre-container__preferencias-container__bloco__title">
+              Hobbies
+          </h2>
+          <ul class="sobre-container__preferencias-container__bloco__lista">
+              <li>Assistir series/animes/filmes e tudo que tenha uma história.</li>
+              <li>Jogar os mais variados tipos de jogos.</li>
+              <li>Ler artigos interessantes.</li>
+              <li>Criar projetos pessoais.</li>
+              <li>E por ultimo mas não menos importante Estudar.</li> 
+          </ul>
+      </div>
+      <div class="sobre-container__preferencias-container__bloco">
+          <img src="../../../assets/paixoes.png" alt="paixões" class="sobre-container__preferencias-container__bloco__icon" />
+          <h2 class="header header__secondary--large sobre-container__preferencias-container__bloco__title">
+              Paixões
+          </h2>
+          <ul class="sobre-container__preferencias-container__bloco__lista">
+              <li>Batman (animações e o Batman com o Christian Bale é claro).</li>
+              <li>Liga da Justica (as animações).</li>
+              <li>Programação/Tecnologia em geral.</li>
+              <li>Me desafiar ao máximo.</li>
+              <li>E estudar não é só um hobbie, tenho paixão por isso também.</li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<!-- fim seção sobre -->

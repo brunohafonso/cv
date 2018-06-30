@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,700");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6); 
+} 
+
+/* inicio titulos */
+
+.header {
+  text-align: center;
+}
+
+.header--white {
+  color: #fff;
+}
+
+.header--center {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 60px);
+  transform: translate(-50%, -50%);
+}
+
+.header__primary,
+.header__secondary {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header__primary--large {
+  font-size: 5.5em;
+}
+
+.header__secondary--large {
+  font-size: 3.5em;
+  font-weight: 200;
+}
+
+.header__secondary--white {
+  color: #fff;
+}
+
+.header__secondary--grey {
+  color: #47525e;
+}
+
+.header__divisor {
+  border: 0.5px solid;
+  width: 280px;
+  margin: auto;
+}
+
+.header__divisor--white {
+  border-color: #fff;
+}
+
+.header__divisor--white {
+  border-color: #fff;
+}
+
+.header__divisor--grey {
+  border-color: #5a6978;
+}
+
+.header__divisor--small {
+  width: 55px;
+}
+
+/* fim titulos */

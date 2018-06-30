@@ -1,0 +1,85 @@
+/* inicio pré home */
+
+.prehome {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background-image: url("../assets/background-prehome.png");
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* inicio animações  */
+  
+  .prehome__animation-item {
+    position: absolute;
+    font-size: 1.6em;
+    color: #fff;
+    left: 500px;
+    top: 50px;
+    width: 1px;
+    height: 30px;
+    animation-name: moveSpaceship;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .prehome__animation-item::before {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    content: "";
+    width: 100px;
+    right: 0px;
+    top: 8.5px;
+    height: 5px;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 118, 163, 0.7) 100%
+    );
+  }
+  
+  .animation-item-1 {
+    animation-duration: 10s;
+  }
+  
+  .animation-item-2 {
+    animation-duration: 5s;
+    top: 60%;
+  }
+  
+  .animation-item-3 {
+    animation-duration: 20s;
+    top: 80%;
+  }
+  
+  .animation-item-4 {
+    animation-duration: 15s;
+    top: 20%;
+  }
+  
+  .animation-item-5 {
+    animation-duration: 7s;
+    top: 40%;
+  }
+  
+  .animation-item-6 {
+    animation-duration: 25s;
+    top: 50%;
+  }
+  
+  @keyframes moveSpaceship {
+    from {
+      left: -100px;
+    }
+    to {
+      left: calc(100% + 100px);
+    }
+  }
+  
+  /* fim animações */
+
+  /* fim pre home */
