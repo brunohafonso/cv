@@ -10,7 +10,7 @@ export class CvMainComponent implements OnInit {
   @ViewChild('menu') menu: ElementRef;
   @ViewChild('prehome') prehome: ElementRef;
   @ViewChild('sobre') sobre: ElementRef;
-  pathFormated: any;
+  @ViewChild('menuLinks') menuLinks: ElementRef;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
@@ -45,10 +45,35 @@ export class CvMainComponent implements OnInit {
         }
       }
 
+      if (element !== this.prehome) {
+        this.ativaDesativaMenu();
+      }
+
       window.scroll({
         left: 0,
         top: element.nativeElement.offsetTop - 60,
         behavior: 'smooth'
       });
+    }
+
+    ativarMenu() {
+        if (this.menu.nativeElement.classList.contains('fixed')) {
+            this.ativaDesativaMenu();
+        } else {
+          window.scroll({
+            left: 0,
+            top: this.sobre.nativeElement.offsetTop - 60,
+            behavior: 'smooth'
+          });
+          this.ativaDesativaMenu();
+        }
+    }
+
+    ativaDesativaMenu() {
+      if (this.menuLinks.nativeElement.classList.contains('visivel')) {
+        this.menuLinks.nativeElement.classList.remove('visivel');
+      } else {
+        this.menuLinks.nativeElement.classList.add('visivel');
+      }
     }
 }

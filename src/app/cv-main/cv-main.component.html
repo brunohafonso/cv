@@ -49,9 +49,9 @@
           </a>
       </div>
       <div class="menu-container__botao">
-          <i class="fa fa-align-right"></i>
+          <i (click)="ativarMenu()" class="fa fa-align-right"></i>
       </div>
-      <ul class="menu-container__menu">
+      <ul #menuLinks class="menu-container__menu">
           <li class="menu-container__menu__item">
               <a class="menu-container__menu__item__link" (click)="smoothScroll($event)" href="#sobre">Sobre</a>
           </li>
