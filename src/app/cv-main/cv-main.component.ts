@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild, Renderer2, HostListener } from '@angular/core';
+import { faFileCode, faLightbulb, faCodeBranch, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cv-main',
@@ -7,10 +8,16 @@ import { Component, OnInit, ElementRef, ViewChild, Renderer2, HostListener } fro
 })
 export class CvMainComponent implements OnInit {
 
+  faFileCode = faFileCode;
+  faLightbulb = faLightbulb;
+  faCodeBranch = faCodeBranch;
+  faDatabase = faDatabase;
+
   @ViewChild('menu') menu: ElementRef;
   @ViewChild('prehome') prehome: ElementRef;
   @ViewChild('sobre') sobre: ElementRef;
   @ViewChild('menuLinks') menuLinks: ElementRef;
+  @ViewChild('skills') skills: ElementRef;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
@@ -41,6 +48,9 @@ export class CvMainComponent implements OnInit {
           break;
           case 'prehome':
             element = this.prehome;
+          break;
+          case 'skills':
+            element = this.skills;
           break;
         }
       }

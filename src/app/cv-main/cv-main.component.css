@@ -233,7 +233,72 @@
   
   /* fim seção sobre */ 
 
+/* inicio seção skills */
 
+.skills-container {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #5f328f, #089f98);
+  padding: 20px 0 35px 0px;
+  overflow: auto;
+}
+
+.skills-container__header {
+  font-weight: bold;
+}
+
+.skills-container__labels-container {
+  width: 85%;
+  height: 450px;
+  margin: 20px auto 0px auto;
+  text-align: center;
+}
+
+.skill {
+  width: 100%;
+  margin: 25px auto;
+  position: relative;
+}
+
+.icon {
+  width: 1em;
+  color: #fff;
+  font-size: 3em;
+  float: left;
+  vertical-align: top;
+}
+
+.description {
+  float: left;
+  width: 100%;
+  max-width: calc(100% - 40px);
+  vertical-align: top;
+  margin-left: 8px;
+}
+
+.description h3 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.description p {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* fim seção skills */
 
 
   @media screen and (max-width: 992px) {

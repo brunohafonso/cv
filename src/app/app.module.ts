@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CvMainComponent } from './cv-main/cv-main.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -17,6 +18,7 @@ import { ROUTES } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
