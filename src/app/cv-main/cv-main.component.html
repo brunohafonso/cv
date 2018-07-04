@@ -70,6 +70,36 @@
 
 <!-- fim menu -->
 
+<!-- inicio controles -->
+
+<ul class="controls" *ngIf="show">
+    <li class="contato" [@mostraEsconde]="state">
+        <p>
+            Entrar em Contato
+        </p>        
+        <span (click)="toggleState()">
+            <fa-icon [icon]="faCommentAlt"></fa-icon>
+        </span>
+    </li> 
+    <li class="cv" [@mostraEsconde]="state">
+        <p>
+            Baixar meu Curriculo
+        </p>
+        <span (click)="toggleState()">
+            <a href="../../assets/Bruno Afonso.pdf" download="CV-BRUNO-AFONSO">
+                <fa-icon [icon]="faFileDownload"></fa-icon>
+            </a>
+        </span>
+    </li>
+    <li>
+        <span (click)="toggleState()">
+            <fa-icon [icon]="faPlus"></fa-icon>
+        </span>
+    </li>
+</ul>
+
+<!-- fim controles -->
+
 <!-- inicio seção sobre -->
 
 <div #sobre class="sobre-container">
