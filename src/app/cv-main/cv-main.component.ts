@@ -8,7 +8,8 @@ import {
   faPlus,
   faCommentAlt,
   faSpaceShuttle,
-  faCode
+  faCode,
+  faAlignRight
 } from '@fortawesome/free-solid-svg-icons';
 import { state, style, animate, transition, trigger } from '@angular/animations';
 
@@ -41,6 +42,7 @@ export class CvMainComponent implements OnInit {
   faCommentAlt = faCommentAlt;
   faSpaceShuttle = faSpaceShuttle;
   faCode = faCode;
+  faAlignRight = faAlignRight;
 
 
   // mostrar controles
