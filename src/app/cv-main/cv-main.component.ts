@@ -6,14 +6,16 @@ import {
   faDatabase,
   faFileDownload,
   faPlus,
-  faCommentAlt
+  faCommentAlt,
+  faSpaceShuttle,
+  faCode
 } from '@fortawesome/free-solid-svg-icons';
 import { state, style, animate, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-cv-main',
   templateUrl: './cv-main.component.html',
-  styleUrls: ['./cv-main.component.css'],
+  styleUrls: ['./cv-main.component.min.css'],
   animations: [
     trigger('mostraEsconde', [
       state('inactive', style({
@@ -37,6 +39,9 @@ export class CvMainComponent implements OnInit {
   faFileDownload = faFileDownload;
   faPlus = faPlus;
   faCommentAlt = faCommentAlt;
+  faSpaceShuttle = faSpaceShuttle;
+  faCode = faCode;
+
 
   // mostrar controles
   state = 'inactive';

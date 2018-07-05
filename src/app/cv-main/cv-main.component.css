@@ -175,6 +175,7 @@
     bottom: 1em;
     right: 1em;
     text-align: right;
+    z-index: 1000;
   }
 
   .controls li {
@@ -279,6 +280,7 @@
     display: inline-block;
     color: #47525e;
     letter-spacing: 10px;
+    vertical-align: middle;
   }
   
   .sobre-container__preferencias-container__bloco__lista {
