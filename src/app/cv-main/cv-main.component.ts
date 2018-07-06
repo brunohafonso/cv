@@ -9,7 +9,8 @@ import {
   faCommentAlt,
   faSpaceShuttle,
   faCode,
-  faAlignRight
+  faAlignRight,
+  faMagic
 } from '@fortawesome/free-solid-svg-icons';
 import { state, style, animate, transition, trigger } from '@angular/animations';
 
@@ -35,7 +36,7 @@ export class CvMainComponent implements OnInit {
   // icones fon awesome
   faFileCode = faFileCode;
   faLightbulb = faLightbulb;
-  faCodeBranch = faCodeBranch;
+  faMagic = faMagic;
   faDatabase = faDatabase;
   faFileDownload = faFileDownload;
   faPlus = faPlus;

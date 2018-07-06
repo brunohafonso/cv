@@ -269,6 +269,7 @@
     float: left;
     width: 50%;
     text-align: center;
+    padding: 15px 0;
   }
   
   .sobre-container__preferencias-container__bloco__icon {
@@ -300,7 +301,7 @@
   width: 100%;
   height: auto;
   background: linear-gradient(to bottom, #5f328f, #089f98);
-  padding: 20px 0 35px 0px;
+  padding: 30px 0 45px 0px;
   overflow: auto;
 }
 
