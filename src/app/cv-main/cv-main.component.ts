@@ -2,7 +2,6 @@ import { Component, OnInit, ElementRef, ViewChild, Renderer2, HostListener } fro
 import {
   faFileCode,
   faLightbulb,
-  faCodeBranch,
   faDatabase,
   faFileDownload,
   faPlus,
@@ -128,7 +127,6 @@ export class CvMainComponent implements OnInit {
             top: this.sobre.nativeElement.offsetTop - 60,
             behavior: 'smooth'
           });
-          this.ativaDesativaMenu();
         }
     }
 
