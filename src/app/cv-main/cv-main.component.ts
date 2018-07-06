@@ -16,7 +16,7 @@ import { state, style, animate, transition, trigger } from '@angular/animations'
 @Component({
   selector: 'app-cv-main',
   templateUrl: './cv-main.component.html',
-  styleUrls: ['./cv-main.component.css'],
+  styleUrls: ['./cv-main.component.min.css'],
   animations: [
     trigger('mostraEsconde', [
       state('inactive', style({
