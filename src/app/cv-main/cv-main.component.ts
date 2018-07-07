@@ -152,7 +152,7 @@ export class CvMainComponent implements OnInit {
     }
 
     lazyLoad() {
-      if (window.pageYOffset >= this.portifolio.nativeElement.offsetTop) {
+      if (window.pageYOffset - 60 >= this.portifolio.nativeElement.offsetTop) {
         console.log('lazy load');
         this.teste.nativeElement.setAttribute('src', 'assets/banner-bikemobi.svg');
       }
