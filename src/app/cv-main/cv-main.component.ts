@@ -61,6 +61,7 @@ export class CvMainComponent implements OnInit {
   @ViewChild('skills') skills: ElementRef;
   @ViewChild('botaoControles') botaoControles: ElementRef;
   @ViewChild('portifolio') portifolio: ElementRef;
+  @ViewChild('teste') teste: ElementRef;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
@@ -73,6 +74,7 @@ export class CvMainComponent implements OnInit {
       const scrollPosition = window.pageYOffset;
       const componentPosition = this.prehome.nativeElement.offsetHeight;
       this.mostrarBotao();
+      this.lazyLoad();
       if (scrollPosition >= componentPosition - 60) {
         this.renderer.addClass(this.menu.nativeElement, 'fixed');
       } else {
@@ -147,5 +149,12 @@ export class CvMainComponent implements OnInit {
 
     toggleState() {
       this.state = this.state === 'active' ? 'inactive' : 'active';
+    }
+
+    lazyLoad() {
+      if (window.pageYOffset >= this.portifolio.nativeElement.offsetTop) {
+        console.log('lazy load');
+        this.teste.nativeElement.setAttribute('src', 'assets/banner-bikemobi.svg');
+      }
     }
 }
