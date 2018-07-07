@@ -9,7 +9,9 @@ import {
   faSpaceShuttle,
   faCode,
   faAlignRight,
-  faMagic
+  faMagic,
+  faStopwatch,
+  faCodeBranch
 } from '@fortawesome/free-solid-svg-icons';
 import { state, style, animate, transition, trigger } from '@angular/animations';
 
@@ -43,7 +45,8 @@ export class CvMainComponent implements OnInit {
   faSpaceShuttle = faSpaceShuttle;
   faCode = faCode;
   faAlignRight = faAlignRight;
-
+  faStopwatch = faStopwatch;
+  faCodeBranch = faCodeBranch;
 
   // mostrar controles
   state = 'inactive';
@@ -57,6 +60,7 @@ export class CvMainComponent implements OnInit {
   @ViewChild('menuLinks') menuLinks: ElementRef;
   @ViewChild('skills') skills: ElementRef;
   @ViewChild('botaoControles') botaoControles: ElementRef;
+  @ViewChild('portifolio') portifolio: ElementRef;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
@@ -103,6 +107,9 @@ export class CvMainComponent implements OnInit {
           break;
           case 'skills':
             element = this.skills;
+          break;
+          case 'portifolio':
+            element = this.portifolio;
           break;
         }
       }
