@@ -18,7 +18,7 @@ import { state, style, animate, transition, trigger } from '@angular/animations'
 @Component({
   selector: 'app-cv-main',
   templateUrl: './cv-main.component.html',
-  styleUrls: ['./cv-main.component.min.css'],
+  styleUrls: ['./cv-main.component.css'],
   animations: [
     trigger('mostraEsconde', [
       state('inactive', style({
@@ -61,6 +61,7 @@ export class CvMainComponent implements OnInit {
   @ViewChild('skills') skills: ElementRef;
   @ViewChild('botaoControles') botaoControles: ElementRef;
   @ViewChild('portifolio') portifolio: ElementRef;
+  @ViewChild('contato') contato: ElementRef;
   @ViewChild('teste') teste: ElementRef;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
@@ -113,6 +114,9 @@ export class CvMainComponent implements OnInit {
           case 'portifolio':
             element = this.portifolio;
           break;
+          case 'contato':
+            element = this.contato;
+          break;
         }
       }
 
@@ -152,7 +156,7 @@ export class CvMainComponent implements OnInit {
     }
 
     lazyLoad() {
-      if (window.pageYOffset - 60 >= this.portifolio.nativeElement.offsetTop) {
+      if (window.pageYOffset >= this.portifolio.nativeElement.offsetTop - 60) {
         console.log('lazy load');
         this.teste.nativeElement.setAttribute('src', 'assets/banner-bikemobi.svg');
       }

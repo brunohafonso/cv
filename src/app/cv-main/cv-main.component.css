@@ -430,6 +430,15 @@
 
 /* fim secao portifolio */
 
+/* inicio secao contato */
+
+.contato-container {
+  padding: 20px 0;
+  min-height: 100%;
+}
+
+/* fim secao contato */
+
   @media screen and (max-width: 992px) {
     .skills-container__labels-container__moon {
       margin: auto 15%;
