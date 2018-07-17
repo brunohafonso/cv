@@ -587,4 +587,8 @@ footer {
       display: block;
       line-height: 40px;
     }
+
+    .container-contact-details  { 
+      width: 95%;
+    }
   }
