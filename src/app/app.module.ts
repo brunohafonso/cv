@@ -8,6 +8,7 @@ import { CvMainComponent } from './cv-main/cv-main.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjetoComponent } from './cv-main/projeto/projeto.component';
 
 
 
@@ -15,7 +16,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
-    CvMainComponent
+    CvMainComponent,
+    ProjetoComponent
   ],
   imports: [
     BrowserModule,

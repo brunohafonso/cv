@@ -11,7 +11,10 @@ import {
   faAlignRight,
   faMagic,
   faStopwatch,
-  faCodeBranch
+  faCodeBranch,
+  faRobot,
+  faPhone,
+  faAt
 } from '@fortawesome/free-solid-svg-icons';
 import { state, style, animate, transition, trigger } from '@angular/animations';
 
@@ -47,6 +50,9 @@ export class CvMainComponent implements OnInit {
   faAlignRight = faAlignRight;
   faStopwatch = faStopwatch;
   faCodeBranch = faCodeBranch;
+  faRobot = faRobot;
+  faPhone = faPhone;
+  faAt = faAt;
 
   // mostrar controles
   state = 'inactive';
@@ -63,6 +69,7 @@ export class CvMainComponent implements OnInit {
   @ViewChild('portifolio') portifolio: ElementRef;
   @ViewChild('contato') contato: ElementRef;
   @ViewChild('teste') teste: ElementRef;
+  @ViewChild('footer') footer: ElementRef;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
 
@@ -87,7 +94,7 @@ export class CvMainComponent implements OnInit {
     mostrarBotao() {
       const scrollPosition = window.pageYOffset;
       const componentPosition = this.prehome.nativeElement.offsetHeight;
-      if (scrollPosition >= componentPosition  - 300) {
+      if (scrollPosition >= componentPosition  - 300 && scrollPosition + 500 <= this.contato.nativeElement.offsetTop) {
         this.show = true;
       } else {
         this.show = false;
