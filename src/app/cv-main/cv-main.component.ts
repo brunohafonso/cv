@@ -17,11 +17,13 @@ import {
   faAt
 } from '@fortawesome/free-solid-svg-icons';
 import { state, style, animate, transition, trigger } from '@angular/animations';
+import { Contact } from './contact.model';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-cv-main',
   templateUrl: './cv-main.component.html',
-  styleUrls: ['./cv-main.component.css'],
+  styleUrls: ['./cv-main.component.min.css'],
   animations: [
     trigger('mostraEsconde', [
       state('inactive', style({
@@ -59,6 +61,9 @@ export class CvMainComponent implements OnInit {
 
   // mostrar botao controles
   show = false;
+
+  contact = new Contact();
+  contactForm: FormGroup;
 
   @ViewChild('menu') menu: ElementRef;
   @ViewChild('prehome') prehome: ElementRef;
@@ -164,8 +169,11 @@ export class CvMainComponent implements OnInit {
 
     lazyLoad() {
       if (window.pageYOffset >= this.portifolio.nativeElement.offsetTop - 60) {
-        console.log('lazy load');
         this.teste.nativeElement.setAttribute('src', 'assets/banner-bikemobi.svg');
       }
+    }
+
+    submit() {
+      alert(this.contact);
     }
 }

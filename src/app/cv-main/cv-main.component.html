@@ -290,11 +290,11 @@
                 <div class="form-container">
                     <fa-icon class="header-icon" [icon]="faRobot"></fa-icon>                    
                     <h2>Diga alguma coisa</h2>
-                    <form class="contact" action="">
-                        <input type="text" placeholder="Insira seu nome"/>
-                        <input type="email" placeholder="Insira seu email"/>
-                        <textarea placeholder="Insira sua mensagem"></textarea>
-                        <input type="submit" value="Enviar"/>
+                    <form class="contact" (submit)="submit()" [(ngModel)]="contact" #contactForm="ngForm">
+                        <input type="text" placeholder="Insira seu nome" name="nome" [(ngModel)]="contact.nome"  required="required" autocomplete="off"/>
+                        <input type="email" placeholder="Insira seu email" name="email" [(ngModel)]="contact.email"  required="required" autocomplete="off"/>
+                        <textarea placeholder="Insira sua mensagem" required="required" name="mensagem" [(ngModel)]="contact.mensagem"></textarea>
+                        <input type="submit" value="Enviar" [disabled]="contactForm.invalid"/>
                     </form>
                 </div>
             </div>
