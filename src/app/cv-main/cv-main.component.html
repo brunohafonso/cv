@@ -290,7 +290,7 @@
                 <div class="form-container">
                     <fa-icon class="header-icon" [icon]="faRobot"></fa-icon>                    
                     <h2>Diga alguma coisa</h2>
-                    <form class="contact" (submit)="submit()" [(ngModel)]="contact" #contactForm="ngForm">
+                    <form class="contact" (submit)="submit()" #contactForm="ngForm">
                         <input type="text" placeholder="Insira seu nome" name="nome" [(ngModel)]="contact.nome"  required="required" autocomplete="off"/>
                         <input type="email" placeholder="Insira seu email" name="email" [(ngModel)]="contact.email"  required="required" autocomplete="off"/>
                         <textarea placeholder="Insira sua mensagem" required="required" name="mensagem" [(ngModel)]="contact.mensagem"></textarea>
@@ -302,7 +302,25 @@
     </div>
 </div> 
 <footer>
-
+    <div class="container container-footer">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 footer-about">
+                <h2 class="container-footer__header">
+                    Bruno Afonso
+                </h2>
+                <p class="container-footer__description">Eu sou Bruno Afonso. Desenvolvedor Fullstack. 
+                    Familiarizado com os ciclos de desenvolvimento para projetos dinâmicos da Web 
+                    utilizando angular 5 e Asp.Net.</p>
+            </div>
+            <div class="col-md-6 col-sm-12 footer-network">
+                <ul class="container-footer__social-networks">
+                    <li class="container-footer__social-networks__item"><a class="container-footer__social-networks__item__link" href="https://github.com/brunohafonso" target="_blank"><img class="container-footer__social-networks__item__link__icon" src="assets/github.svg"/></a></li>
+                    <li class="container-footer__social-networks__item"><a class="container-footer__social-networks__item__link" href="https://www.linkedin.com/in/brunohafonso/" target="_blank"><img class="container-footer__social-networks__item__link__icon" src="assets/linkedin-sign.svg"/></a></li>
+                    <li class="container-footer__social-networks__item"><a class="container-footer__social-networks__item__link" href="https://www.facebook.com/brunohafonso" target="_blank"><img class="container-footer__social-networks__item__link__icon" src="assets/facebook-logo.svg"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 
 

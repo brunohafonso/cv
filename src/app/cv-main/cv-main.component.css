@@ -536,21 +536,58 @@
 
 footer {
   background: #5f328f;
-  min-height: 400px;
+  min-height: 250px;
   position: relative;
 }
+
+.container-footer {
+  padding-top: 95px;
+}
+
+.container-footer__header {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.container-footer__description {
+  color: #fff;
+  font-size: 1.5rem; 
+}
+
+.container-footer__social-networks {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  line-height: 7;
+}
+
+.container-footer__social-networks__item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.container-footer__social-networks__item__link__icon {
+  width: 50px; 
+}
+
 
 
 /* fim secao contato */
 
-  @media screen and (max-width: 992px) {
-
-  }
   
   @media screen and (max-width: 768px) {
     .sobre-container__preferencias-container__bloco {
       float: none;
       width: 100%;
+    }
+
+    .footer-network {
+      order: 1;
+    }
+
+    .footer-about {
+      order: 2;
     }
   }
   
