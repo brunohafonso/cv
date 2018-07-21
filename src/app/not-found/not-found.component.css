@@ -1,0 +1,5 @@
+.container-not-found {
+    background:  linear-gradient(10deg, #a1d9b4 20%, #32988a 40%, #000e3c 70%);
+    min-height: 100%;
+    width: 100%;
+}

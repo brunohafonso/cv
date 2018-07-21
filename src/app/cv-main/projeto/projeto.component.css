@@ -51,6 +51,7 @@
 }
 
 .details__header {
+    margin-top: 10px;
     color: rgba(0, 0, 0, .5);
 }
 

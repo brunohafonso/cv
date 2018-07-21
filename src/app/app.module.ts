@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjetoComponent } from './cv-main/projeto/projeto.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -17,7 +18,8 @@ import { ProjetoComponent } from './cv-main/projeto/projeto.component';
   declarations: [
     AppComponent,
     CvMainComponent,
-    ProjetoComponent
+    ProjetoComponent,
+    NotFoundComponent
   ],
   imports: [
     FormsModule,
