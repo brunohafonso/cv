@@ -5,7 +5,7 @@ import { faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-projeto',
   templateUrl: './projeto.component.html',
-  styleUrls: ['./projeto.component.css']
+  styleUrls: ['./projeto.component.min.css']
 })
 export class ProjetoComponent implements OnInit {
 
