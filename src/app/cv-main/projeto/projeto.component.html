@@ -1,3 +1,43 @@
-<p>
-  projeto works!
-</p>
+<div class="project-container">
+  <nav class="menu">
+      <div class="menu__back-button">
+          <a class="menu__back-button__link" [routerLink]="['']"><fa-icon [icon]="faArrowCircleLeft"></fa-icon> Voltar para a página principal</a>
+      </div>
+  </nav>
+  <main class="main-content">
+      <div class="container">
+          <h1 class="header header__secondary--large">BikeMobi</h1>
+          <div class="header__divisor header__divisor--grey header__divisor--small" style="margin-bottom: 10px;"></div> 
+          <p class="project-descripition">
+            Aplicativo que auxilia na navegação transmitindo o passo a passo da rota para um dispositivo que fica preso a uma luva e que orienta o ciclista durante o trajeto 
+            sem a necessidade de olhar o celular, diminuindo assim a chance de roubos e além disso um sistema de avaliação do trajeto para que os trajetos passados fossem
+            cada vez melhores de acordo com o feedback de cada usuário.
+          </p>
+          <iframe class="video" src="https://www.youtube.com/embed/hL-xlsykYmA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="row details">
+            <div class="col-md-6 col-sm-12 details__grid">
+              <h3 class="details__header">
+                Envolvidos
+              </h3>
+              <div class="container-members">
+                <a class="container-members__link" href="https://www.linkedin.com/in/brunohafonso/" target="_blank">Bruno Afonso</a>,
+                <a class="container-members__link" href="https://www.linkedin.com/in/rebecca-arantes/" target="_blank">Rebecca Arantes</a>,
+                <a class="container-members__link" href="https://www.linkedin.com/in/rodolfoand/" target="_blank">Rodolfo Andrade</a>,
+                <a class="container-members__link" href="https://www.linkedin.com/in/odirlei-sabella/" target="_blank">Odirlei Sabella</a>,
+                <a class="container-members__link" href="https://www.linkedin.com/in/emerson-rocha/" target="_blank">Emerson Rocha</a>,
+                <a class="container-members__link" href="https://www.linkedin.com/in/murilo-rosa/" target="_blank">Murilo Rosa</a>,
+                <a class="container-members__link" href="https://www.linkedin.com/in/kauan-macedo-561554158/" target="_blank">Kauan Macedo</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 details__grid">
+              <h3 class="details__header">
+                Técnologias Utilizadas
+              </h3>
+              <div class="container-tecnologias">
+                <p class="container-tecnologias__tecnologia">C#, Asp.Net Core, Entity Framework Core, Sql Server, Swagger,Html, Css, Javascript, React, Android, Iot</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </main> 
+</div>

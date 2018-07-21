@@ -8,7 +8,7 @@ import { ProjetoComponent } from './cv-main/projeto/projeto.component';
 
 const ROUTES: Routes = [
     {path: '', component: CvMainComponent},
-    {path: 'projetos/:id', component: ProjetoComponent}
+    {path: 'portifolio/:id', component: ProjetoComponent}
 ];
 
 export { ROUTES };
