@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, Renderer2, HostListener } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, ViewChildren, QueryList, Renderer2, HostListener } from '@angular/core';
 import {
   faFileCode,
   faLightbulb,
@@ -73,7 +73,7 @@ export class CvMainComponent implements OnInit {
   @ViewChild('botaoControles') botaoControles: ElementRef;
   @ViewChild('portifolio') portifolio: ElementRef;
   @ViewChild('contato') contato: ElementRef;
-  @ViewChild('teste') teste: ElementRef;
+  @ViewChildren('projectImage') projectImage: QueryList<ElementRef>;
   @ViewChild('footer') footer: ElementRef;
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
@@ -168,9 +168,12 @@ export class CvMainComponent implements OnInit {
     }
 
     lazyLoad() {
-      if (window.pageYOffset >= this.portifolio.nativeElement.offsetTop - 60) {
-        this.teste.nativeElement.setAttribute('src', 'assets/banner-bikemobi.svg');
-      }
+      this.projectImage.map((img) => {
+        console.log(img.nativeElement.dataset.url);
+        if (window.pageYOffset >= this.portifolio.nativeElement.offsetTop - 60) {
+          img.nativeElement.setAttribute('src', img.nativeElement.dataset.url);
+        }
+      });
     }
 
     submit() {

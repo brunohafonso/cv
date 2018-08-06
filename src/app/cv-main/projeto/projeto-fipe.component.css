@@ -1,0 +1,65 @@
+.project-container {
+    min-height: 100%;
+}
+
+.menu {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 65px;
+    line-height: 61px;
+    padding: 0px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu__back-button__link {
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.5rem;
+}
+
+.menu__back-button__link:hover {
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none;    
+}
+
+.main-content {
+    padding-top: 75px;
+}
+
+.project-descripition {
+    font-size: 1.6em;
+    margin: 20px auto;
+    width: 85%;
+}
+
+.banner {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: auto;
+    width: 100%;
+}
+
+.details {
+    margin: 10px auto;
+    padding: 0;
+    width: 85%;
+}
+
+.details__grid {
+    padding: 0 !important;
+}
+
+.details__header {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.container-members__link {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.container-tecnologias__tecnologia {
+    font-size: 1.5rem;
+}

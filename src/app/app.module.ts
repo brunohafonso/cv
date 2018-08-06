@@ -10,6 +10,7 @@ import { ROUTES } from './app.routes';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjetoComponent } from './cv-main/projeto/projeto.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProjetoFipeComponent } from './cv-main/projeto/projeto-fipe.component';
 
 
 
@@ -19,7 +20,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     CvMainComponent,
     ProjetoComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ProjetoFipeComponent
   ],
   imports: [
     FormsModule,

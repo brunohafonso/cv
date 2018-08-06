@@ -249,17 +249,32 @@
         <div class="row">
             <div class="col-sm-12 col-md-6">
                 <div class="card__portifolio">
-                    <div  class="card__round-img"></div>
+                    <img src="assets/logo-bikemobi.png" class="card__round-img"/>
                     <div class="card__title">
                         <h3>BikeMobi</h3>
                         <h4>Twitter</h4>
                     </div>
-                    <img #teste class="card__image" src data-url="assets/banner-bikemobi.svg" alt="bikeMobi Banner"/>
+                    <img #projectImage class="card__image" src data-url="assets/banner-bikemobi.svg" alt="bikeMobi Banner"/>
                     <p class="card__description">
                             Aplicativo que além de indicar o melhor trajeto aos ciclistas, auxilia na navegação e ao 
                             final do trajeto o usuário consegue avaliar a rota para que possamos entregar rotas cada vez melhores.
                     </p>
                     <a class="card__link" [routerLink]="['portifolio/bikemobi']">Ver projeto</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card__portifolio">
+                    <img src="assets/fipe-logo.png" class="card__round-img"/>
+                    <div class="card__title">
+                        <h3>Fipe Table</h3>
+                        <h4>Fipe</h4>
+                    </div>
+                    <img #projectImage class="card__image" src data-url="assets/banner-fipe.png" alt="fipe table Banner"/>
+                    <p class="card__description">
+                            Website para consulta do preço médio de veículos automotivos de pequeno porte, de acordo com a tabela Fipe, 
+                            sendo possível pesquisar por marcas, modelos e anos dos veículos.
+                    </p>
+                    <a class="card__link" [routerLink]="['portifolio/fipe']">Ver projeto</a>
                 </div>
             </div>
         </div>
