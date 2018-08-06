@@ -23,7 +23,7 @@ import { FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-cv-main',
   templateUrl: './cv-main.component.html',
-  styleUrls: ['./cv-main.component.min.css'],
+  styleUrls: ['./cv-main.component.css'],
   animations: [
     trigger('mostraEsconde', [
       state('inactive', style({
